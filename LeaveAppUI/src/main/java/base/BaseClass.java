@@ -21,8 +21,20 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.interactions.Actions;
+import org.testng.Assert;
+
+import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.Status;
  
 public class BaseClass {
+	 public static void assertequals(String actual, String expected, String tc, ExtentTest test) {
+	        try {
+	    
+	            Assert.assertEquals(actual, expected);
+	            test.log(Status.PASS, tc +"Result [" + expected + "],["+ actual+"]");
+	        } catch (AssertionError e) {
+	            test.log(Status.FAIL, tc +e.getMessage());}
+	        }
 
 	public static Actions actions;
 
