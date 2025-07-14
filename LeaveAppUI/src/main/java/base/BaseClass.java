@@ -3,7 +3,7 @@ package base;
 import java.io.File;
 
 import java.io.IOException;
-
+import java.util.List;
 import java.util.Set;
  
 import org.apache.commons.io.FileUtils;
@@ -22,19 +22,43 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.Assert;
+import org.testng.asserts.SoftAssert;
 
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
  
 public class BaseClass {
-	 public static void assertequals(String actual, String expected, String tc, ExtentTest test) {
+	
+	public static void assertequals(String actual, String expected, String tc, ExtentTest test) {
+		
 	        try {
-	    
-	            Assert.assertEquals(actual, expected);
+	    SoftAssert softAssert = new SoftAssert();
+		softAssert.assertEquals(actual, expected);
+		
 	            test.log(Status.PASS, tc +"Result [" + expected + "],["+ actual+"]");
 	        } catch (AssertionError e) {
 	            test.log(Status.FAIL, tc +e.getMessage());}
 	        }
+
+	public static void mandatoryfield(String actual, String expected, ExtentTest test) {
+	        try {
+	    
+	            Assert.assertEquals(actual, expected);
+	            test.log(Status.PASS, "Result [" + expected + "],["+ actual+"]");
+	        } catch (AssertionError e) {
+	            test.log(Status.FAIL,e.getMessage());}
+	        }
+	public static void verifyDropdownHasOptions(List<WebElement> options, String dropdownName, ExtentTest test) {
+	        try {
+	            Assert.assertTrue(options.size()>0, dropdownName );
+	            test.log(Status.PASS, dropdownName+ " has " + options.size());
+	            for (WebElement String : options) {
+	                test.log(Status.INFO, "Option: " + String.getText());
+	            }
+	        } catch (AssertionError e) {
+	            test.log(Status.FAIL, dropdownName + " has no options. " + e.getMessage());
+	        }
+	    }
 
 	public static Actions actions;
 
@@ -172,7 +196,8 @@ public class BaseClass {
         }
 
     }
- 
 }
+ 
+
 
  
