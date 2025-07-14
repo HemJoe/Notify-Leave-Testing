@@ -2,16 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-07-10T16:57:57 IST" name="Default suite" finished-at="2025-07-10T16:58:00 IST" duration-ms="2620">
+  <suite started-at="2025-07-14T00:03:17 IST" name="Default suite" finished-at="2025-07-14T00:03:32 IST" duration-ms="14918">
     <groups>
     </groups>
-    <test started-at="2025-07-10T16:57:57 IST" name="Default test" finished-at="2025-07-10T16:58:00 IST" duration-ms="2620">
-      <class name="main.NewTest3">
-        <test-method signature="f()[pri:0, instance:main.NewTest3@1252b961]" started-at="2025-07-10T16:57:57 IST" name="f" finished-at="2025-07-10T16:58:00 IST" duration-ms="2529" status="PASS">
+    <test started-at="2025-07-14T00:03:17 IST" name="Default test" finished-at="2025-07-14T00:03:32 IST" duration-ms="14918">
+      <class name="us_001.TS04">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:us_001.TS04@70fab835]" started-at="2025-07-14T00:03:17 IST" name="beforeMethod" finished-at="2025-07-14T00:03:20 IST" duration-ms="2673" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="f()[pri:0, instance:us_001.TS04@70fab835]" started-at="2025-07-14T00:03:20 IST" name="f" finished-at="2025-07-14T00:03:31 IST" duration-ms="11393" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- f -->
-      </class> <!-- main.NewTest3 -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:us_001.TS04@70fab835]" started-at="2025-07-14T00:03:31 IST" name="afterMethod" finished-at="2025-07-14T00:03:32 IST" duration-ms="818" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- us_001.TS04 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
