@@ -46,9 +46,28 @@ public class TS04 {
 	
    }  
   }
-	 
+	 // TC_020 – "Leave Type" dropdown allows only one option
 
-	  
+	public void leavetype(){
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	}
 	  
 	  
   
