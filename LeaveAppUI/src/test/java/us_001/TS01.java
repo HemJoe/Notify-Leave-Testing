@@ -31,9 +31,9 @@ public class TS01 {
 	  Thread.sleep(5000);
 
 	  //TC001
-	  BaseClass.assertequals(driver.findElement(By.xpath("//label[@for='leaveType']")).getText(),"*Leave Type", "TC001",test);
+	  BaseClass.assertequals(driver.findElement(By.xpath("//label[@for='leaveType']")).getText(),"*Leave Typ", "TC001",test);
 	  //TC002
-	  BaseClass.assertequals(driver.findElement(By.xpath("/label[@for='availedBy']")).getText(), "*Availed By","TC002", test);
+	  BaseClass.assertequals(driver.findElement(By.xpath("//label[@for='availedBy']")).getText(), "*Availed By","TC002", test);
 	  //TC003
 	  BaseClass.assertequals(driver.findElement(By.xpath("//label[@for='startDate']")).getText(), "*Start Date","TC003", test);
 	  //TC004
