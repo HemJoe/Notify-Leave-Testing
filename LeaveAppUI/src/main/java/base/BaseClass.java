@@ -59,6 +59,10 @@ public class BaseClass {
 	            test.log(Status.FAIL, dropdownName + " has no options. " + e.getMessage());
 	        }
 	    }
+	public void assertequals(String string, List<String> expectedOptions, List<String> actop) {
+		
+	}
+
 
 	public static Actions actions;
 
