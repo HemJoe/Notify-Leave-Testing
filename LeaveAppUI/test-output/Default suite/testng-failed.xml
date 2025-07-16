@@ -3,8 +3,9 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="us_001.TS04">
+      <class name="us_001.TS13">
         <methods>
+<<<<<<< HEAD
           <include name="NotifyToRecipientTC025"/>
           <include name="TeamTC028"/>
           <include name="leavetype"/>
@@ -15,8 +16,13 @@
           <include name="BaseLocationTC026"/>
           <include name="LeavetypeTC019"/>
           <include name="Beforemethod"/>
+=======
+          <include name="f"/>
+          <include name="beforeMethod"/>
+          <include name="afterMethod"/>
+>>>>>>> branch 'Logesh' of https://github.com/HemJoe/Notify-Leave-Testing.git
         </methods>
-      </class> <!-- us_001.TS04 -->
+      </class> <!-- us_001.TS13 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -3,6 +3,7 @@ package base;
 import java.io.File;
 
 import java.io.IOException;
+import java.time.Duration;
 import java.util.List;
 import java.util.Set;
  
@@ -21,6 +22,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 import org.testng.asserts.SoftAssert;
 
@@ -172,6 +174,36 @@ public class BaseClass {
         js.executeScript("arguments[0].scrollIntoView(true);", element);
 
     }
+    
+    public static void scrollIntoViewXY(int x, int y){
+
+    	JavascriptExecutor js = (JavascriptExecutor) driver;
+    	 
+    	 js.executeScript("window.scrollBy(x,y)");
+    }
+    
+    public static void  implicitlyWait(int s) {
+    	driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(s));
+    	
+    }
+    
+    public static void Dropdown(WebElement dropdownElement) {
+//    	WebElement dropdownElement = driver.findElement(By.xpath(""));
+
+        // Create Select object
+        Select dropdown = new Select(dropdownElement);
+
+        // Get all options
+        List<WebElement> allOptions = dropdown.getOptions();
+
+        // Print text of each option
+        for (WebElement option : allOptions) {
+            System.out.println(option.getText());
+        }
+    	
+    }
+    
+
  
     public static void jsClick(WebElement element) {
 
