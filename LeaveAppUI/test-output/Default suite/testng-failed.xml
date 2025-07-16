@@ -5,9 +5,16 @@
     <classes>
       <class name="us_001.TS04">
         <methods>
+          <include name="NotifyToRecipientTC025"/>
+          <include name="TeamTC028"/>
           <include name="leavetype"/>
           <include name="afterMethod"/>
-          <include name="beforeMethod"/>
+          <include name="backupcontactTC024"/>
+          <include name="LeaveStatusTC029"/>
+          <include name="ProjectTC027"/>
+          <include name="BaseLocationTC026"/>
+          <include name="LeavetypeTC019"/>
+          <include name="Beforemethod"/>
         </methods>
       </class> <!-- us_001.TS04 -->
     </classes>

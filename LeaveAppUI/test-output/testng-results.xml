@@ -1,29 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="8" passed="8" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-07-15T10:49:04 IST" name="Default suite" finished-at="2025-07-15T10:49:21 IST" duration-ms="16974">
+  <suite started-at="2025-07-16T10:32:19 IST" name="Default suite" finished-at="2025-07-16T10:33:17 IST" duration-ms="57954">
     <groups>
     </groups>
-    <test started-at="2025-07-15T10:49:04 IST" name="Default test" finished-at="2025-07-15T10:49:21 IST" duration-ms="16974">
-      <class name="us_001.TS02">
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:us_001.TS02@379ab47b]" started-at="2025-07-15T10:49:03 IST" name="beforeMethod" finished-at="2025-07-15T10:49:04 IST" duration-ms="1399" status="PASS">
+    <test started-at="2025-07-16T10:32:19 IST" name="Default test" finished-at="2025-07-16T10:33:17 IST" duration-ms="57954">
+      <class name="us_001.TS04">
+        <test-method is-config="true" signature="Beforemethod()[pri:0, instance:us_001.TS04@7a56812e]" started-at="2025-07-16T10:32:11 IST" name="Beforemethod" finished-at="2025-07-16T10:32:19 IST" duration-ms="7928" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="f()[pri:0, instance:us_001.TS02@379ab47b]" started-at="2025-07-15T10:49:04 IST" name="f" finished-at="2025-07-15T10:49:21 IST" duration-ms="16763" status="PASS">
+        </test-method> <!-- Beforemethod -->
+        <test-method signature="leavetype()[pri:1, instance:us_001.TS04@7a56812e]" started-at="2025-07-16T10:32:19 IST" name="leavetype" finished-at="2025-07-16T10:32:28 IST" duration-ms="9633" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- f -->
-        <test-method signature="nonasterisks()[pri:0, instance:us_001.TS02@379ab47b]" started-at="2025-07-15T10:49:21 IST" name="nonasterisks" finished-at="2025-07-15T10:49:21 IST" duration-ms="141" status="PASS">
+        </test-method> <!-- leavetype -->
+        <test-method signature="LeavetypeTC019()[pri:2, instance:us_001.TS04@7a56812e]" started-at="2025-07-16T10:32:28 IST" name="LeavetypeTC019" finished-at="2025-07-16T10:32:40 IST" duration-ms="11320" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- nonasterisks -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:us_001.TS02@379ab47b]" started-at="2025-07-15T10:49:21 IST" name="afterMethod" finished-at="2025-07-15T10:49:23 IST" duration-ms="1847" status="PASS">
+        </test-method> <!-- LeavetypeTC019 -->
+        <test-method signature="backupcontactTC024()[pri:3, instance:us_001.TS04@7a56812e]" started-at="2025-07-16T10:32:40 IST" name="backupcontactTC024" finished-at="2025-07-16T10:32:45 IST" duration-ms="5722" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- backupcontactTC024 -->
+        <test-method signature="NotifyToRecipientTC025()[pri:4, instance:us_001.TS04@7a56812e]" started-at="2025-07-16T10:32:45 IST" name="NotifyToRecipientTC025" finished-at="2025-07-16T10:32:51 IST" duration-ms="5705" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- NotifyToRecipientTC025 -->
+        <test-method signature="BaseLocationTC026()[pri:5, instance:us_001.TS04@7a56812e]" started-at="2025-07-16T10:32:51 IST" name="BaseLocationTC026" finished-at="2025-07-16T10:32:57 IST" duration-ms="5659" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BaseLocationTC026 -->
+        <test-method signature="ProjectTC027()[pri:6, instance:us_001.TS04@7a56812e]" started-at="2025-07-16T10:32:57 IST" name="ProjectTC027" finished-at="2025-07-16T10:33:03 IST" duration-ms="6637" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ProjectTC027 -->
+        <test-method signature="TeamTC028()[pri:7, instance:us_001.TS04@7a56812e]" started-at="2025-07-16T10:33:03 IST" name="TeamTC028" finished-at="2025-07-16T10:33:10 IST" duration-ms="6615" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TeamTC028 -->
+        <test-method signature="LeaveStatusTC029()[pri:8, instance:us_001.TS04@7a56812e]" started-at="2025-07-16T10:33:10 IST" name="LeaveStatusTC029" finished-at="2025-07-16T10:33:17 IST" duration-ms="6624" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LeaveStatusTC029 -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:us_001.TS04@7a56812e]" started-at="2025-07-16T10:33:17 IST" name="afterMethod" finished-at="2025-07-16T10:33:17 IST" duration-ms="662" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-      </class> <!-- us_001.TS02 -->
+      </class> <!-- us_001.TS04 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
