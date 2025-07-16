@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="us_001.TS04">
+      <class name="us_001.TS13">
         <methods>
-          <include name="leavetype"/>
-          <include name="afterMethod"/>
+          <include name="f"/>
           <include name="beforeMethod"/>
+          <include name="afterMethod"/>
         </methods>
-      </class> <!-- us_001.TS04 -->
+      </class> <!-- us_001.TS13 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
