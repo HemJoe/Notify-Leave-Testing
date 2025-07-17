@@ -4,6 +4,7 @@ import java.io.File;
 
 import java.io.IOException;
 import java.time.Duration;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
  
@@ -61,9 +62,9 @@ public class BaseClass {
 	            test.log(Status.FAIL, dropdownName + " has no options. " + e.getMessage());
 	        }
 	    }
-	public void assertequals(String string, List<String> expectedOptions, List<String> actop) {
-		
-	}
+//	public void assertequals(String string, List<String> expectedOptions, List<String> actop) {
+//		
+//	}
 
 
 	public static Actions actions;
@@ -232,6 +233,15 @@ public class BaseClass {
         }
 
     }
+
+	public static void assertequals(String actual, List<String> expectedOptions, List<String> actop, ExtentTest test) {
+		// TODO Auto-generated method stub
+		
+	}
+	
+	
+	
+
 }
  
 

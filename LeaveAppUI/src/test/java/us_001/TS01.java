@@ -29,7 +29,8 @@ public class TS01 {
 	  Thread.sleep(5000);
 	  driver.findElement(By.xpath("//a[@href]")).click();
 	  Thread.sleep(5000);
-
+	  try {
+		
 	  //TC001
 	  BaseClass.assertequals(driver.findElement(By.xpath("//label[@for='leaveType']")).getText(),"*Leave Typ", "TC001",test);
 	  //TC002
@@ -56,6 +57,9 @@ public class TS01 {
 	  BaseClass.assertequals(driver.findElement(By.xpath("//label[@for='comments']")).getText(),"Comments","TC012", test);
 	  softAssert.assertAll();
 	  
+	  } catch (Exception e) {
+			test.log(Status.FAIL,"failed due to"+e.getMessage());
+		}
   }
   
   @BeforeMethod

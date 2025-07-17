@@ -30,6 +30,8 @@ public class TS02 {
 	  Thread.sleep(5000);
 	  driver.findElement(By.xpath("//a[@class='click-link fs-5']")).click();
 	  Thread.sleep(5000);
+	  try {
+		
 	  //leavetype
 	  BaseClass.mandatoryfield(driver.findElement(By.xpath("//label[@for='leaveType']")).getText(),"*Leave Type",test);
 	  //availed by
@@ -50,7 +52,10 @@ public class TS02 {
 	  BaseClass.mandatoryfield(driver.findElement(By.xpath("//label[@for='subLobTeam']")).getText(), "*Team", test);
 	  //Leave Status
 	  BaseClass.mandatoryfield(driver.findElement(By.xpath("//label[@for='leaveStatus']")).getText(),"*Leave Status (Pick Planned if start date is in future)", test);
-  }
+	  } catch (Exception e) {
+			test.log(Status.FAIL,"failed due to"+e.getMessage());
+		}
+	  }
   @Test
   public void nonasterisks(){
 	 // Verify "Brief Reason" and "Comments" don't have asterisks
