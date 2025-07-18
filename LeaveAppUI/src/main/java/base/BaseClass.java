@@ -41,6 +41,16 @@ public class BaseClass {
 	        } catch (AssertionError e) {
 	            test.log(Status.FAIL, tc +e.getMessage());}
 	        }
+	
+	public void assertequals(boolean actual, boolean expected, String tc, ExtentTest test) {
+	    try {
+	        Assert.assertEquals(actual, expected);
+	        test.log(Status.PASS, tc + " | Expected: " + expected + ", Actual: " + actual);
+	    } catch (AssertionError e) {
+	        test.log(Status.FAIL, tc + " | Expected: " + expected + ", Actual: " + actual + " | " + e.getMessage());
+	    }
+	}
+
 
 	public static void mandatoryfield(String actual, String expected, ExtentTest test) {
 	        try {
@@ -232,6 +242,11 @@ public class BaseClass {
         }
 
     }
+
+	public static void assertequals(int size, int i, String tc, ExtentTest test) {
+		// TODO Auto-generated method stub
+		
+	}
 }
  
 

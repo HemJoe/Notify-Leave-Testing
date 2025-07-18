@@ -24,22 +24,21 @@ public class TC07  extends BaseClass{
 	  test = extent.createTest("Placeholder Text Verification", "Verify all placeholders on the form");
 	    SoftAssert softAssert = new SoftAssert();
 	  
-	        Thread.sleep(5000); 
+	        Thread.sleep(1000); 
 	        driver.findElement(By.xpath("//a[@href]")).click();
-	        Thread.sleep(5000);   
+	        Thread.sleep(1000);   
   
 	try {
 	  BaseClass.assertequals(driver.findElement(By.xpath("(//div[@class='ng-select-container'])[1]")).getText(), "Select Leave Type","TC_051", test);
-	  BaseClass.assertequals(driver.findElement(By.id("briefReason")).getText(), "Optional - Describe your leave","TC_052", test);
+	  BaseClass.assertequals(driver.findElement(By.xpath("//textarea[@id='briefReason']")).getText(), "Optional - Describe your leave in less than (or) equal to 100 characters","TC_052", test);
 	  BaseClass.assertequals(driver.findElement(By.xpath("(//div[@class='ng-select-container'])[3]")).getText(), "Select Backup Contact(s)","TC_053", test);
 	  BaseClass.assertequals(driver.findElement(By.xpath("(//div[@class='ng-select-container'])[4]")).getText(), "Select Recipient(s)","TC_054", test);
 	  BaseClass.assertequals(driver.findElement(By.xpath("(//div[@class='ng-select-container'])[5]")).getText(), "Select Base Location","TC_055", test);
 	  BaseClass.assertequals(driver.findElement(By.xpath("(//div[@class='ng-select-container'])[6]")).getText(), "Select Project","TC_056", test);
-	  BaseClass.assertequals(driver.findElement(By.xpath("(//div[@class='ng-select-container'])[7]")).getText(), "Select Project","TC_056", test);	  
-	  BaseClass.assertequals(driver.findElement(By.xpath("(//input[@type='text'])[8])")).getText(), "Select ","TC_057", test);
-	  BaseClass.assertequals(driver.findElement(By.id("comments")).getText(), "Optional - Describe your leave","TC_058", test);
+	  BaseClass.assertequals(driver.findElement(By.xpath("(//div[@class='ng-select-container'])[7]")).getText(), "Select Team","TC_057", test);	  
+	 // BaseClass.assertequals(driver.findElement(By.xpath("(//div[@class='ng-select-container'])[8]")).getText(), "Availed","TC_058", test);
+      BaseClass.assertequals(driver.findElement(By.xpath("//textarea[@placeholder=\"Optional - Mention anything else that you'd like to add in less than (or) equal to 100 characters\"]")).getText(), "Optional - Mention anything else that you'd like to add in less than (or) equal to 100 characters","TC_059", test);
 
-	  
 	  
 	  
 	  
